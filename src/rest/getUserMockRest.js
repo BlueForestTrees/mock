@@ -10,6 +10,8 @@ router.get('/api/user/mail/:mail',
     run(({mail}) => {
         if (mail === "ademe@ademe.fr") {
             return {_id: "5b94f96cd5939d56d0333498"}
+        }else if (mail === "fr.openfoodfacts.org") {
+            return {_id: "5b94f96cd5939d56d0333498"}
         }
         throw {code: "bf400"}
     })
